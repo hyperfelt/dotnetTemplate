@@ -7,9 +7,10 @@
     "shortName": "hpftemp",
     "tags": {
         "language": "C#",
+        "type": "solution"
     },
     "sourceName": "dotnetTemplate",
-    "preferNameDirectory": "true",
+    "preferNameDirectory": true,
     "symbols": {
         "Framework": {
             "type": "parameter",
