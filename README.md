@@ -8,6 +8,7 @@ When creating a new single app solution with an IDE (in opposition to a solution
 ## Template structure
 The template is made of 5 projects, which can be separated into 3 layers :
 
+```
 Presentation
 |- YourApp.Console
 Infrastructure
@@ -16,6 +17,7 @@ Infrastructure
 Domain
 |- YourApp.Application
 |- YourApp.Core
+```
 
 ### YourApp.Console
 This is the default entry point of the application. You can replace it with any presentation-type project such as a website, a desktop app, a mobile app, etc.
@@ -37,20 +39,22 @@ The domain logic is implemented here in the form of services. If you do prefer a
 The domain objects and interfaces resides here.
 
 Tip: put your interface files in the same way that your solution folder structure is, minus the project folder, like this:
+```
 Infrastructure
 |- YourApp.Persistence
-   |- **Repositories**
+   |- Repositories
       |- AccountRepository.cs
 |- YourApp.Gateways
-   |- **Clients**
+   |- Clients
       |- WeatherAPIClient.cs
 Domain
 |- YourApp.Core
    |- Interfaces
-      |- **Repositories**
+      |- Repositories
          |- IAccountRepository.cs
-      |- **Clients**
+      |- Clients
          |- IWeatherAPIClient.cs
+```
 
 ## Additional notes
 I have created this template based on my own experience. It is heavily inspired by the Clean Architecture, which I really like.
