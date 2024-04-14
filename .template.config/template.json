@@ -1,7 +1,7 @@
 {
     "$schema": "http://json.schemastore.org/template",
     "author": "Hyperfelt",
-    "classifications": [ "Common", "Console", "Library" ]
+    "classifications": [ "Common", "Console", "Library" ],
     "name": "Hyperfelt .NET Application",
     "identity": "Hyperfelt.dotnetTemplate",
     "shortName": "hpftemp",
