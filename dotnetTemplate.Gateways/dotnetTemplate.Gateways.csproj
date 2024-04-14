@@ -7,10 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Clients\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\dotnetTemplate.Core\dotnetTemplate.Core.csproj" />
     </ItemGroup>
 
