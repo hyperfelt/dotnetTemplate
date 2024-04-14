@@ -1,6 +1,6 @@
 namespace dotnetTemplate.Core.DomainObjects;
 
-public record BaseDO
+public abstract record BaseDO
 {
     public int Id { get; init; }
 }
