@@ -3,11 +3,11 @@ namespace dotnetTemplate.Core.DomainObjects;
 public abstract record BaseDO
 {
     // Properties
-    private int _id = -1;
-    public int Id
+    private uint _id = 0;
+    public uint Id
     {
         get => _id;
-        set
+        init
         {
             if (value <= 0)
                 throw new Exception("The identifier must be a number superior to 0.");
@@ -16,16 +16,16 @@ public abstract record BaseDO
         }
     }
 
-    private readonly DateTime _creationDate = DateTime.Now;
-    public DateTime CreationDate
+    private readonly DateTime _entryDate = DateTime.Now;
+    public DateTime EntryDate
     {
-        get => _creationDate;
+        get => _entryDate;
         init
         {
             if (value > DateTime.Now)
-                throw new Exception("The creation date and time must be equal or lower to the current.");
+                throw new Exception("The entry date and time must be equal or lower to the current.");
 
-            _creationDate = value;
+            _entryDate = value;
         }
     }
 
