@@ -59,4 +59,6 @@ Domain
 ## Additional notes
 I have created this template based on my own experience. It is heavily inspired by the Clean Architecture, which I really like.
 
+It is made to provide a base for any DDD application, but that doesn't mean it will be suited for your needs without any adaptation. There is no such thing as a scaffolding that is adapted to every project. Feel free to edit and even make your own fork!
+
 It is of course open to any criticism and contribution! 😊
