@@ -3,7 +3,7 @@ namespace dotnetTemplate.Core.DomainObjects;
 public abstract record BaseDO
 {
     // Properties
-    private int _id;
+    private int _id = -1;
     public int Id
     {
         get => _id;
